@@ -1,14 +1,17 @@
-# Portfolio
+# Rishabh Tripathi — Portfolio
 
-Personal portfolio website built with plain HTML, CSS and JavaScript (no build step).
+Personal portfolio for a QA / Automation Test Engineer, built with plain HTML, CSS and JavaScript (no build step).
 
 ## Run locally
 Open `index.html` in a browser, or run `npx serve .`
 
-## Customize
-- `index.html`: name, tagline, about text, social links (replace `YOUR_USERNAME`)
-- `script.js`: the `projects` and `skills` arrays
-- `style.css`: colors via CSS variables at the top
+## Structure
+- `index.html`: all content (hero, about, experience, projects, skills, education, contact)
+- `style.css`: base layout, hero and load-in animations
+- `sections.css`: section and component styles
+- `motion.js`: clock, scroll reveals, counters, terminal demo, parallax, magnetic buttons
+- `assets/`: images
+- `script.js`: unused leftover from the original template
 
 ## Deploy (free)
-Push to GitHub, then Settings → Pages → deploy from the `main` branch.
+Push to GitHub, then Settings → Pages → deploy from the `main` branch, `/ (root)`.

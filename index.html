@@ -3,69 +3,338 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rishabh Tripathi | Portfolio</title>
-  <meta name="description" content="Portfolio of Rishabh Tripathi - projects, skills and contact." />
+  <title>Rishabh Tripathi | Automation Test Engineer</title>
+  <meta name="description" content="Portfolio of Rishabh Tripathi - Quality Assurance Engineer skilled in manual testing, Selenium automation (Java, TestNG, POM), API testing with Postman, and SQL validation." />
+  <meta name="theme-color" content="#f3efe9" />
+  <script>document.documentElement.classList.add("js");</script>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="sections.css" />
 </head>
 <body>
-  <header class="nav">
-    <a href="#home" class="logo">RT</a>
-    <nav>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a href="#home" class="brand" aria-label="Rishabh Tripathi - home">
+      <div class="brand-mark" aria-hidden="true">
+        <span class="dot"></span>
+      </div>
+      <div class="brand-copy">
+        <span class="brand-name">Rishabh Tripathi</span>
+        <span class="brand-role">Automation Test Engineer</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+
+    <div class="top-actions">
+      <span class="time">NEW DELHI • <span id="clock">23:59</span> IST</span>
+      <a href="#contact" class="contact-button" data-magnetic>Get in touch <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
   </header>
 
+  <!-- ============ HERO ============ -->
   <main>
-    <section id="home" class="hero">
-      <p class="eyebrow">Hi, I'm</p>
-      <h1>Rishabh Tripathi</h1>
-      <p class="tagline">I build things for the web. <!-- TODO: edit your tagline --></p>
-      <div class="cta">
-        <a class="btn" href="#projects">View my work</a>
-        <a class="btn ghost" href="#contact">Get in touch</a>
+    <section class="hero-layout" id="home">
+      <div class="hero-copy">
+        <p class="status reveal" style="--d:0.1s"><span class="pulse"></span> Open to QA &amp; automation roles</p>
+
+        <h1>
+          <span class="line"><span class="line-inner" style="--i:0">Quality<b class="stop">.</b></span></span>
+          <span class="line"><span class="line-inner" style="--i:1"><span class="mark">Automation</span><b class="stop">.</b></span></span>
+          <span class="line"><span class="line-inner" style="--i:2">Delivery<b class="stop">.</b></span></span>
+        </h1>
+
+        <p class="intro reveal" style="--d:0.55s">
+          I'm Rishabh Tripathi. I bring manual QA, automation testing, and API validation together to build reliable digital products and catch issues before users do.
+        </p>
+
+        <div class="hero-ctas reveal" style="--d:0.7s">
+          <a href="#projects" class="cta-button" data-magnetic>See my work <span class="arrow" aria-hidden="true">→</span></a>
+          <a href="#contact" class="ghost-link">Let's test smarter</a>
+        </div>
+
+        <p class="small-note reveal" style="--d:0.85s">Manual &amp; Automation QA • Selenium • Java • API Testing • SQL</p>
       </div>
-      <div class="socials">
-        <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:rishabhtripathi8858@gmail.com">Email</a>
+
+      <div class="hero-art" aria-label="Profile portrait">
+        <img class="profile-image" src="assets/profile-portrait.png" alt="Rishabh Tripathi portrait" />
+        <div class="float-chip chip-a" aria-hidden="true"><span class="ok">✓</span> 250+ test cases</div>
+        <div class="float-chip chip-b" aria-hidden="true"><span class="ok">✓</span> POM framework</div>
+        <div class="float-chip chip-c" aria-hidden="true"><span class="ok">✓</span> API validated</div>
       </div>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>Write a short paragraph about yourself: what you do, what you're learning, and what you're looking for.</p>
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Selenium WebDriver</span><i>✦</i><span>TestNG</span><i>✦</i><span>Postman</span><i>✦</i><span>Java</span><i>✦</i><span>Maven</span><i>✦</i><span>Page Object Model</span><i>✦</i><span>GitLab</span><i>✦</i><span>SQL</span><i>✦</i><span>Agile Scrum</span><i>✦</i><span>Regression</span><i>✦</i><span>Smoke</span><i>✦</i><span>API Testing</span><i>✦</i>
+        <span>Selenium WebDriver</span><i>✦</i><span>TestNG</span><i>✦</i><span>Postman</span><i>✦</i><span>Java</span><i>✦</i><span>Maven</span><i>✦</i><span>Page Object Model</span><i>✦</i><span>GitLab</span><i>✦</i><span>SQL</span><i>✦</i><span>Agile Scrum</span><i>✦</i><span>Regression</span><i>✦</i><span>Smoke</span><i>✦</i><span>API Testing</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section-head sr">
+        <span class="eyebrow">01 — About</span>
+        <h2>Detail-oriented by habit, <em>automation-minded</em> by design.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text sr">
+          <p>
+            I'm a QA Engineer with hands-on experience in manual testing, API testing, Selenium automation (Java, TestNG, Page Object Model) and defect lifecycle management in Agile teams.
+          </p>
+          <p>
+            I'm comfortable across SDLC and STLC, GitLab issue tracking and Postman API validation, and I write structured test cases, test plans and bug reports with clear severity and priority. I'm looking for a QA role where I can contribute to software quality, early defect detection and continuous delivery.
+          </p>
+          <div class="about-meta">
+            <span><b>Based in</b> India</span>
+            <span><b>B.Tech</b> CSE, Invertis University</span>
+            <span><b>Focus</b> Quality, speed, reliability</span>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat sr" style="--d:0s">
+            <strong><span data-count="250">0</span>+</strong>
+            <span>Test cases written</span>
+          </div>
+          <div class="stat sr" style="--d:0.1s">
+            <strong><span data-count="16">0</span></strong>
+            <span>Modules covered</span>
+          </div>
+          <div class="stat sr" style="--d:0.2s">
+            <strong><span data-count="2">0</span></strong>
+            <span>QA internships</span>
+          </div>
+          <div class="stat sr" style="--d:0.3s">
+            <strong><span data-count="5">0</span></strong>
+            <span>Automated login scenarios</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div id="project-grid" class="grid"></div>
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="section-head sr">
+        <span class="eyebrow">02 — Experience</span>
+        <h2>Real teams. Real releases.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="role sr spot">
+          <div class="role-when">May 2026 – Sep 2026</div>
+          <div class="role-body">
+            <h3>QA Intern</h3>
+            <p class="role-co">Webkul Software Pvt. Ltd.</p>
+            <ul>
+              <li>Performed manual and functional testing on live web application modules.</li>
+              <li>Executed test cases, logged and tracked defects, and collaborated with developers to get bugs resolved on time.</li>
+              <li>Applied SDLC/STLC methodologies and Agile practices in a real-time production environment.</li>
+            </ul>
+            <div class="tag-row"><span>Manual</span><span>Functional</span><span>Defect tracking</span><span>Agile</span></div>
+          </div>
+        </article>
+
+        <article class="role sr spot">
+          <div class="role-when">Jul 2025 – Dec 2025</div>
+          <div class="role-body">
+            <h3>QA Intern</h3>
+            <p class="role-co">PulseLink Innovations Pvt. Ltd.</p>
+            <ul>
+              <li>Executed Functional, Regression and Smoke testing across application modules in an Agile Scrum environment.</li>
+              <li>Created structured test cases and reported defects with severity and priority classification to streamline resolution.</li>
+              <li>Performed API testing with Postman, validating GET/POST requests, status codes (200, 401, 404) and error responses.</li>
+              <li>Ran SQL-based data validation to verify backend data integrity across application workflows.</li>
+            </ul>
+            <div class="tag-row"><span>Regression</span><span>Smoke</span><span>Postman</span><span>SQL</span><span>Scrum</span></div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul class="chips" id="skill-list"></ul>
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="section-head sr">
+        <span class="eyebrow">03 — Projects</span>
+        <h2>Things I've built to break things.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project sr spot">
+          <div class="project-top">
+            <span class="project-no">01</span>
+            <div class="tag-row"><span>Java</span><span>Selenium WebDriver</span><span>TestNG</span><span>Maven</span><span>Git</span></div>
+          </div>
+          <h3>VWO Login Page — Selenium Automation</h3>
+          <ul>
+            <li>Automated 5 login scenarios with Java, Selenium WebDriver and TestNG: valid page load, empty credentials, invalid email/password, password masking and the Forgot Password link.</li>
+            <li>Used the Page Object Model to keep locators and page actions separate from test code.</li>
+            <li>Used TestNG annotations (<code>@Test</code>, <code>@BeforeMethod</code>, <code>@AfterMethod</code>) and assertions, with explicit waits to handle page loading.</li>
+          </ul>
+
+          <div class="terminal" data-terminal aria-label="Simulated test run for the VWO login suite">
+            <div class="term-bar"><i></i><i></i><i></i><span>mvn test — VWO login suite <em>(simulated run)</em></span></div>
+            <ol class="term-body">
+              <li data-pass>testPageLoad <b>PASSED</b></li>
+              <li data-pass>testEmptyCredentials <b>PASSED</b></li>
+              <li data-pass>testInvalidEmailPassword <b>PASSED</b></li>
+              <li data-pass>testPasswordMasking <b>PASSED</b></li>
+              <li data-pass>testForgotPasswordLink <b>PASSED</b></li>
+              <li class="term-sum">Tests run: 5, Failures: 0, Skips: 0 — <b>BUILD SUCCESS</b></li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="project sr spot" style="--d:0.12s">
+          <div class="project-top">
+            <span class="project-no">02</span>
+            <div class="tag-row"><span>GitLab</span><span>Postman</span><span>MS Excel</span></div>
+          </div>
+          <h3>Independent QA Testing Practice <small>250+ test cases · 16 modules · self-initiated</small></h3>
+          <ul>
+            <li><b>Functional &amp; UI:</b> test cases for login, signup, checkout and promo-code flows (Myntra, WhatsApp, food delivery) with preconditions, steps, and expected vs. actual results.</li>
+            <li><b>Domain testing:</b> scenario-driven suites using Boundary Value Analysis for Flight Booking, a Loyalty Program and Instagram Reels upload validation.</li>
+            <li><b>API &amp; docs:</b> Postman collections for GET/POST validation, plus Excel repositories with Test Case ID, steps, data, result and status across 16 modules.</li>
+          </ul>
+
+          <div class="tc-table" role="table" aria-label="Sample test case format">
+            <div class="tc-head" role="row"><span>Test Case ID</span><span>Steps</span><span>Expected</span><span>Status</span></div>
+            <div class="tc-row" role="row"><span>TC_LOGIN_01</span><span>Enter valid credentials</span><span>User lands on dashboard</span><b class="pass">Pass</b></div>
+            <div class="tc-row" role="row"><span>TC_PROMO_04</span><span>Apply expired code</span><span>Clear error message</span><b class="pass">Pass</b></div>
+            <div class="tc-row" role="row"><span>TC_BVA_09</span><span>Upload at size limit + 1</span><span>Upload rejected</span><b class="fail">Bug logged</b></div>
+          </div>
+          <p class="tc-note">Sample format only: the real suites live in Excel across 16 modules.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Want to work together? Send me a message.</p>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Your name" required />
-        <input type="email" name="email" placeholder="Your email" required />
-        <textarea name="message" rows="5" placeholder="Your message" required></textarea>
-        <button class="btn" type="submit">Send</button>
-      </form>
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="section-head sr">
+        <span class="eyebrow">04 — Skills</span>
+        <h2>The toolbox.</h2>
+      </div>
+
+      <div class="skill-grid">
+        <div class="skill-card sr spot">
+          <h3>Testing types</h3>
+          <div class="chips"><span>Functional</span><span>Regression</span><span>Smoke</span><span>Sanity</span><span>UI</span><span>Integration</span><span>API</span><span>UAT</span></div>
+        </div>
+        <div class="skill-card sr spot" style="--d:0.08s">
+          <h3>Automation</h3>
+          <div class="chips"><span>Selenium WebDriver</span><span>TestNG</span><span>Maven</span><span>Page Object Model</span><span>Cross-browser</span></div>
+        </div>
+        <div class="skill-card sr spot" style="--d:0.16s">
+          <h3>QA methodologies</h3>
+          <div class="chips"><span>SDLC</span><span>STLC</span><span>Bug life cycle</span><span>Agile (Scrum)</span><span>Boundary Value Analysis</span><span>Equivalence Partitioning</span></div>
+        </div>
+        <div class="skill-card sr spot" style="--d:0.24s">
+          <h3>Programming</h3>
+          <div class="chips"><span>Java (test automation)</span><span>SQL (basic)</span></div>
+        </div>
+        <div class="skill-card sr spot" style="--d:0.32s">
+          <h3>Tools &amp; tracking</h3>
+          <div class="chips"><span>GitLab</span><span>Postman</span><span>Selenium</span><span>Git</span><span>GitHub</span><span>MS Excel</span><span>Google Sheets</span><span>MS Office</span></div>
+        </div>
+        <div class="skill-card sr spot" style="--d:0.4s">
+          <h3>Test artefacts</h3>
+          <div class="chips"><span>Test cases</span><span>Test plans</span><span>Test scenarios</span><span>Bug reports</span><span>Defect logs</span><span>Execution logs</span><span>RTM</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="section-head sr">
+        <span class="eyebrow">05 — Education &amp; training</span>
+        <h2>Where it started.</h2>
+      </div>
+
+      <div class="edu-list">
+        <div class="edu sr">
+          <span class="edu-year">2022 – 2026</span>
+          <div>
+            <h3>B.Tech in Computer Science &amp; Engineering</h3>
+            <p>Invertis University, Bareilly</p>
+          </div>
+          <span class="edu-score">CGPA 7.74</span>
+        </div>
+        <div class="edu sr">
+          <span class="edu-year">2022</span>
+          <div>
+            <h3>Senior Secondary (12th)</h3>
+            <p>Navals Academy, Gorakhpur</p>
+          </div>
+          <span class="edu-score">72.4%</span>
+        </div>
+        <div class="edu sr">
+          <span class="edu-year">2020</span>
+          <div>
+            <h3>Secondary (10th)</h3>
+            <p>Navals Academy, Gorakhpur</p>
+          </div>
+          <span class="edu-score">74.6%</span>
+        </div>
+        <div class="edu sr">
+          <span class="edu-year">Jun – Aug 2023</span>
+          <div>
+            <h3>Summer Training on MERN Stack</h3>
+            <p>Softpro India Computer Technologies Pvt. Ltd.</p>
+          </div>
+          <span class="edu-score">A++ Grade</span>
+        </div>
+      </div>
+
+      <div class="interests sr">
+        <span class="eyebrow">Beyond the test suite</span>
+        <div class="chips big">
+          <span>Exploring AI tools &amp; tech trends</span>
+          <span>Sci-fi movies &amp; series</span>
+          <span>Chess</span>
+          <span>Badminton</span>
+          <span>Travelling</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="contact-inner">
+        <span class="eyebrow sr">06 — Contact</span>
+        <h2 class="sr">Let's catch the bug <em>before</em> your users do.</h2>
+
+        <div class="contact-actions sr">
+          <a class="mail-link" href="mailto:rishabhtripathi8858@gmail.com" data-magnetic>
+            rishabhtripathi8858@gmail.com <span class="arrow" aria-hidden="true">→</span>
+          </a>
+          <button type="button" class="copy-btn" id="copy-email" data-email="rishabhtripathi8858@gmail.com">Copy email</button>
+        </div>
+
+        <div class="contact-links sr">
+          <a href="tel:+917007909066"><span>Phone</span>+91 70079 09066</a>
+          <a href="https://www.linkedin.com/in/rishabhtripathi7007" target="_blank" rel="noopener"><span>LinkedIn</span>linkedin.com/in/rishabhtripathi7007</a>
+          <a href="#home"><span>Location</span>New Delhi, India</a>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <span>© 2026 Rishabh Tripathi</span>
+        <a href="#home">Back to top ↑</a>
+      </footer>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Rishabh Tripathi</p>
-  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
 
-  <script src="script.js"></script>
+  <script src="motion.js" defer></script>
 </body>
 </html>
